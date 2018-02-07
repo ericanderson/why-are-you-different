@@ -1,0 +1,22 @@
+{
+  "name": "why-are-you-different",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.101",
+    "fbjs": "^0.8.16",
+    "lodash": "^4.17.5",
+    "npm-run-all": "^4.1.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.1"
+  },
+  "scripts": {
+    "build": "npm-run-all --serial build:**",
+    "build:tslint": "tslint 'src/**/*.tsx?'",
+    "build:compile": "tsc"
+  },
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
